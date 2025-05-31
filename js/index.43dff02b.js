@@ -1,0 +1,1 @@
+console.log("Script starting..."),$(function(){console.log("DOM ready...");let n=$(".logo"),o=$(".team-menu"),t=$("#intro"),a=$("#team");"#about-us"===window.location.hash?a.fadeIn(300):t.fadeIn(300),o.click(function(){window.location.hash="#about-us",t.fadeOut(300,function(){a.fadeIn()})}),n.click(function(){window.location.hash="",a.fadeOut(300,function(){t.fadeIn()})})});
