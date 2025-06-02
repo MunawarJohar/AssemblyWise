@@ -1,97 +1,166 @@
 <!DOCTYPE html>
-<html lang="en" class="page">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact Us - AssemblyWise</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
-      background: #0d0d0d;
-      color: #33ff33;
-      font-family: 'Courier New', Courier, monospace;
       margin: 0;
-      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom right, #d3b4f0, #9ecdf3);
+      color: #1f1f1f;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
 
     .menu {
       display: flex;
       justify-content: space-between;
       padding: 1rem;
-      background-color: #111;
+      background-color: transparent;
       color: white;
       font-weight: bold;
     }
 
-    .logo img {
-      vertical-align: middle;
+        .logo {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #2a3a7a;
+      margin-left: 15px;
     }
 
-    .logo span {
-      margin-left: 20px;
-    }
-
-    .menu a {
-      color: white;
+    .logo a {
       text-decoration: none;
     }
 
-    .container {
-      background-color: #1e1e1e;
+
+    main {
       padding: 2rem;
-      border-radius: 10px;
-      max-width: 600px;
-      margin: 3rem auto;
-      box-shadow: 0 0 10px rgba(51, 255, 51, 0.3);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1;
       text-align: center;
     }
 
+    .contact-logo {
+      width: 250px;
+      /* margin-bottom: 1.5rem; */
+    }
+
+    .contact-title {
+      font-size: 2rem;
+      margin: 1rem 0;
+      font-weight: 600;
+      color: #2a3a7a;
+    }
+
+    .contact-subtitle {
+      font-size: 1.25rem;
+      /* margin-bottom: 2rem; */
+      color: #333;
+    }
+
+    .contact-cta {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+      color: #333;
+    }
+
     .cta-button {
-      background-color: #3b3bff;
+      background-color: #2a3a7a;
       color: white;
       padding: 0.75rem 1.5rem;
       border: none;
-      border-radius: 999px;
+      border-radius: 6px;
       font-size: 1rem;
       font-weight: 600;
       text-decoration: none;
       display: inline-block;
-      margin-top: 1rem;
+      margin: 1rem 0;
+      transition: background-color 0.2s;
     }
 
-    .contact-icon {
-      margin-top: 1.5rem;
-      font-size: 1.2rem;
+    .cta-button:hover {
+      background-color: #1d2a5a;
+    }
+
+    .contact-info {
+      margin-top: 2rem;
+    }
+
+    .contact-email {
+      font-size: 1rem;
+      color: white;
+      margin-bottom: 1rem;
       display: flex;
-      justify-content: center;
       align-items: center;
-      gap: 10px;
+      justify-content: center;
+      gap: 8px;
     }
 
-    .contact-icon i {
-      color: #33ff33;
+    .social-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 1rem;
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .social-link:hover {
+      text-decoration: underline;
+    }
+
+    .social-icon {
+      width: 18px;
+    height: 18px;
+    background: black;
+    border-radius: 50px;
+    padding:5px 5px;
     }
   </style>
 </head>
 
 <body>
   <div class="menu">
-    <section class="logo">
-      <!-- <img src="images/logo.png" alt="AssemblyWise" width="75px"> -->
-      <span style="color: #4a6fa5; font-size: 30px;">AssemblyWise</span>
-    </section>
-    <section><a href="index.html">Home</a></section>
-  </div>
-
-  <div class="container">
-    <h2>Reach out to the AssemblyWise team</h2>
-    <a href="mailto:hello@assemblywise.com" class="cta-button">Contact Us</a>
-    <div class="contact-icon">
-      <i class="fas fa-envelope"></i>
-      <span>hello@assemblywise.com</span>
+   <div class="logo">
+      <a href="index.html">
+        <img src="Logo.svg" alt="AssemblyWise" width="180px">
+      </a>
     </div>
   </div>
+
+  <main>
+    <img src="Logo.svg" alt="AssemblyWise" class="contact-logo">
+    <h1 class="contact-title">Curious? Let's talk!</h1>
+    <h2 class="contact-subtitle">Reach out today:</h2>
+    <!-- <p class="contact-cta"></p> -->
+    <a href="mailto:hello@assemblywise.com" class="cta-button">Contact us</a>
+    
+    <div class="contact-info">
+      <div class="contact-email">
+        <svg class="social-icon" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+          <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+        </svg>
+        hello@assemblywise.com
+      </div>
+      <a href="https://x.com/AWSpatialAI"  class="social-link" target="_blank">
+        <svg class="social-icon" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+        </svg>
+        @AWSpatialAI
+      </a>
+    </div>
+  </main>
 </body>
 
 </html>
